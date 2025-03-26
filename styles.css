@@ -1,4 +1,4 @@
-/* Root Color Palette */
+/* Color Palette */
 :root {
   --primary-color: #558b2f;        /* Kerala green */
   --accent-color: #fbc02d;         /* Turmeric yellow */
@@ -17,13 +17,15 @@ body {
   color: var(--text-color);
 }
 
-/* Header */
+/* Header with overlay and banana leaf background */
 header {
-  background: url('https://i.imgur.com/fQ4YHgJ.jpg') no-repeat center center/cover;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+              url('images/banana_bkgd.jpg') no-repeat center center/cover;
   padding: 20px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  color: white;
 }
 
 .logo {
@@ -35,16 +37,21 @@ nav a {
   text-decoration: none;
   color: white;
   font-weight: bold;
-  background: rgba(0, 0, 0, 0.3);
+  background: rgba(255, 255, 255, 0.2);
   padding: 8px 14px;
   border-radius: 10px;
+  transition: background 0.3s;
+}
+
+nav a:hover {
+  background: rgba(255, 255, 255, 0.4);
 }
 
 /* Hero Section */
 .hero {
   text-align: center;
   padding: 80px 20px;
-  background: url('https://i.imgur.com/DYYaRte.jpg') no-repeat center center/cover;
+  background: url('images/hero-bg.jpg') no-repeat center center/cover;
   color: white;
   box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.4);
 }
