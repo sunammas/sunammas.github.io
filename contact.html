@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact | Sunamma’s Kerala Foods & Spices</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <img src="images/logo.png" alt="Sunamma's Logo" class="logo" />
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="index.html#products">Products</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <section class="contact">
+    <h2>Get in Touch</h2>
+    <p>We'd love to hear from you! Whether you're ready to order, ask a question, or just want to say hello, reach out through the options below:</p>
+
+    <div style="margin-top: 30px;">
+      <p><strong>📞 WhatsApp:</strong> <a href="https://wa.me/your-number">Click to Chat</a></p>
+      <p><strong>📧 Email:</strong> <a href="mailto:orders@sunammas.com">orders@sunammas.com</a></p>
+      <p><strong>📍 Location:</strong> Based in Kerala, delivering across India</p>
+    </div>
+
+    <h3 style="margin-top: 40px;">Or drop us a message</h3>
+    <form action="mailto:orders@sunammas.com" method="POST" enctype="text/plain" style="margin-top: 20px; max-width: 600px;">
+      <label for="name">Name:</label><br/>
+      <input type="text" id="name" name="name" required style="width: 100%; padding: 8px; margin-bottom: 10px;" /><br/>
+
+      <label for="email">Email:</label><br/>
+      <input type="email" id="email" name="email" required style="width: 100%; padding: 8px; margin-bottom: 10px;" /><br/>
+
+      <label for="message">Message:</label><br/>
+      <textarea id="message" name="message" rows="5" required style="width: 100%; padding: 8px;"></textarea><br/><br/>
+
+      <button type="submit" class="cta">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Sunamma’s Kerala Foods & Spices</p>
+  </footer>
+</body>
+</html>
