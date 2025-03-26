@@ -19,7 +19,7 @@ body {
 
 /* Header with overlay and banana leaf background */
 header {
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+  background: linear-gradient(rgba(255, 255, 255, 0.4), rgba(0, 0, 0, 0.8)),
               url('images/banana_bkgd.jpg') no-repeat center center/cover;
   padding: 20px;
   display: flex;
@@ -28,8 +28,18 @@ header {
   color: white;
 }
 
+
+.logo-container {
+  background-color: rgba(255, 255, 255, 0.7); /* soft white patch */
+  padding: 12px 16px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  display: inline-block;
+}
+
 .logo {
   height: 60px;
+  display: block;
 }
 
 nav a {
